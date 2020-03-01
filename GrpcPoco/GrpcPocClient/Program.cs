@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Grpc.Core;
 using Grpc.Net.Client;
-using GrpcPoco;
-using CommandService = GrpcPoco.CommandService;
+using GrpcPoc;
 
 namespace GrpcPocClient
 {
@@ -12,6 +12,7 @@ namespace GrpcPocClient
         {
             var channel = GrpcChannel.ForAddress("https://localhost:5001");
             var client = new CommandService.CommandServiceClient(channel);
+
             
             Console.WriteLine("Client started...");
             
@@ -32,6 +33,8 @@ namespace GrpcPocClient
 
                 Console.WriteLine("Response: " + reply);
             }
+
+            //client.StreamThings(new CallOptions(Metadata.Empty)).
         }
     }
 }

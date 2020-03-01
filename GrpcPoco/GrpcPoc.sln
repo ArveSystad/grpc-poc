@@ -7,6 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcPocServer", "GrpcPoc\Gr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcPocClient", "GrpcPocClient\GrpcPocClient.csproj", "{ED5D3BF8-5DD9-41A0-8F55-F37FF9DBE7C1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetFxGrpcClient", "NetFxGrpcClient\NetFxGrpcClient.csproj", "{847C36F8-5178-4DE3-B084-904DFCEFCECD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{7D24EAE3-23E5-49F9-89B9-54DA6A4AF0FF}"
+	ProjectSection(SolutionItems) = preProject
+		Proto-Contracts\command.proto = Proto-Contracts\command.proto
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +28,10 @@ Global
 		{ED5D3BF8-5DD9-41A0-8F55-F37FF9DBE7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED5D3BF8-5DD9-41A0-8F55-F37FF9DBE7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED5D3BF8-5DD9-41A0-8F55-F37FF9DBE7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847C36F8-5178-4DE3-B084-904DFCEFCECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847C36F8-5178-4DE3-B084-904DFCEFCECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847C36F8-5178-4DE3-B084-904DFCEFCECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847C36F8-5178-4DE3-B084-904DFCEFCECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

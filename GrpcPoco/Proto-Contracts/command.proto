@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-option csharp_namespace = "GrpcPoco";
+option csharp_namespace = "GrpcPoc";
 
 package CommandExecutor;
 
 service CommandService {
   rpc ExecuteCommand (CommandRequest) returns (CommandResult);
+  rpc StreamThings(stream Thing) returns (stream Thing);
 }
 
 message CommandRequest {

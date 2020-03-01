@@ -1,13 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.10.1" />
-    <PackageReference Include="Grpc.Net.Client" Version="2.25.0" />
+    <PackageReference Include="Grpc" Version="2.27.0" />
     <PackageReference Include="Grpc.Tools" Version="2.25.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -15,6 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="..\Proto-Contracts\command.proto" GrpcServices="Client" />
+    <Protobuf Include="..\Proto-Contracts\command.proto" GrpcServices="Both" /> <!-- Client, Server, Both (default)-->
   </ItemGroup>
 </Project>

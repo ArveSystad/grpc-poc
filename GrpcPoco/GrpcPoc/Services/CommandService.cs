@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
 using Grpc.Core;
-using GrpcPoco;
+using GrpcPoc;
 
 namespace GrpcPocServer.Services
 {
-    public class CommandService : GrpcPoco.CommandService.CommandServiceBase
+    public class CommandService : GrpcPoc.CommandService.CommandServiceBase
     {
         public override Task<CommandResult> ExecuteCommand(CommandRequest request, ServerCallContext context)
         {

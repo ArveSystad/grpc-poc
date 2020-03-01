@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Protos\command.proto" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Protobuf Include="Protos\command.proto" GrpcServices="Server" />
   </ItemGroup>
 
